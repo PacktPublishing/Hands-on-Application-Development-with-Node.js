@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <% include ./partials/header %>
+</head>
+<body class="container">
+
+<main>
+    <div class="jumbotron">
+        <h1>Questions:</h1>
+        <ul>
+            <% questions.forEach( (q, index) => { %>
+                <li><a href="/q/<%=q.id %>"><%= q.text %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+</main>
+<% include ./partials/footer %>
+</body>
+</html>
