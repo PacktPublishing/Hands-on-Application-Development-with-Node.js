@@ -1,0 +1,17 @@
+{
+  "name": "sectionone",
+  "version": "1.0.0",
+  "description": "this is an example application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Joris Hermans",
+  "license": "ISC",
+  "dependencies": {
+    "one-liner-joke": "^1.0.0"
+  }
+}
