@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <% include ./partials/header %>
+</head>
+<body class="container">
+
+<main>
+    <div class="jumbotron">
+        <h1><%= title %>:</h1>
+        <ul>
+            <% answers.forEach( (q, index) => { %>
+                <li><%= q.text %></li>
+            <% }) %>
+        </ul>
+        <hr />
+        <form action="/answering/<%= index %>" method="post">
+            Answer:<br>
+            <textarea rows="4" cols="50" name="answer">
+            Enter text here...</textarea> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</main>
+<% include ./partials/footer %>
+</body>
+</html>

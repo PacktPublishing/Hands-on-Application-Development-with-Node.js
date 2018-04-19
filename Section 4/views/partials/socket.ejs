@@ -1,0 +1,16 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io('/question');
+
+    var arrowUpItems = document.querySelectorAll('.up');
+
+    for (var i = 0; i < arrowUpItems.length; i++) {
+        arrowUpItems[i].addEventListener('click', (event) => {
+            socket.emit('up', {id: event.target.getAttribute('data-q-id')});
+        });
+    }
+    socket.on('update', (result) => {
+        var countEl = document.getElementById(`count_${result.id}`);
+        countEl.innerHTML = result.count;
+    });
+</script>

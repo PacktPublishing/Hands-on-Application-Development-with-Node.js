@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <% include ./partials/header %>
+</head>
+<body class="container">
+
+<main>
+    <div class="jumbotron">
+        <h1>Questions:</h1>
+        <ul>
+            <% questions.forEach( (q, index) => { %>
+                <li class='row'>
+                    <div class='item'>
+                          <i class="arrow up" data-q-id="<%= q.id %>"></i> 
+                          <div id="count_<%= q.id %>"><%= q.count %></div> 
+                          <i class="arrow down"></i>
+                    </div>
+                    <a class='item' href="/q/<%=q.id %>"><%= q.text %></a>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</main>
+<% include ./partials/footer %>
+<% include ./partials/socket %>
+</body>
+</html>
