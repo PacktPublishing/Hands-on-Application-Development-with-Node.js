@@ -15,7 +15,7 @@ With this course, you will be able to create your own web applications in Node.j
 <LI>Work with forms, and authentication
 <LI>How to test your code in Node.js 
 <LI>Use server-side Angular 
-<LI> </LI></UL></DIV>
+  </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
