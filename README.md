@@ -23,7 +23,7 @@ To fully benefit from the coverage included in this course, you will need:<br/>
 This course is for JavaScript developers who want to build server-side applications with Node.js. They should have some knowledge of JavaScript programming. No prior knowledge of Node.js is required although a basic knowledge of web development is required.
 ### Technical Requirements
 This course has the following software requirements:<br/>
-Minimum Hardware Requirements
+Minimum Hardware Requirements:
 For successful completion of this course, students will require the computer systems with at least the following:
 
 
@@ -31,18 +31,14 @@ OS: The latest version of any Operating System, Apple, Windows, or any up to dat
 
 
 
-Processor: 
+Memory: 4 GB
 
 
 
-Memory: 4GB
+Storage: 25 GB
 
 
-
-Storage: 25 gb
-
-
-Recommended Hardware Requirements
+Recommended Hardware Requirements:
 For an optimal experience with hands-on labs and other practical activities, we recommend the following configuration:
 
 
@@ -50,18 +46,11 @@ OS: The latest version of any Operating System, Apple, Windows, or any up to dat
 
 
 
-Processor: 
-
-
-
 Memory: 8 GB
 
 
 
-Storage: 
-
-
-Software Requirements
+Software Requirements:
 
 Operating system: The latest version of any Operating System, Apple, Windows, or any up to date Linux distribution will work
 
