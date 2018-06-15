@@ -1,9 +1,9 @@
 var fs = require('fs');
- 
-fs.readFile('./log.txt', 'utf8', function(err, contents) {
+
+fs.readFile('./log.txt', 'utf-8', function(err, data) {
     if (err) {
-        console.log(err);
+        console.warn(err);
         return;
     }
-    console.log(contents);
-});
+    console.log(data);
+})

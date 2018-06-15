@@ -1,6 +1,6 @@
 var random = require('./random');
 var {limit, guess} = require('./arguments');
-var oneLinerJoke = require('one-liner-joke');
+var funnies = require('funnies');
 var fs = require('fs');
 
 var randomNumber = random(limit);
@@ -9,14 +9,14 @@ log('hello from the lottery ' + randomNumber);
 if (guess && guess == randomNumber) {
     log('hoeray you have won!');
 }
-let randomJoke = oneLinerJoke.getRandomJoke();
-log(randomJoke.body);
+var f = new funnies.Funnies();
+log(f.message());
 
-function log(logText) {
+function log(msg) {
     // write to a file
-    logText += ' \n';
-    fs.appendFile('./log.txt', logText, function(err) {
-        if (err) console.log(err);
-        console.log(logText);
-    })
+    msg += ' \n';
+    fs.appendFile('./log.txt', msg, function(err) {
+        if (err) return;
+        console.log(msg);
+    });
 }

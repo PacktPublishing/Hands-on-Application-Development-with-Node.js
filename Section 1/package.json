@@ -12,6 +12,6 @@
   "author": "Joris Hermans",
   "license": "ISC",
   "dependencies": {
-    "one-liner-joke": "^1.0.0"
+    "funnies": "^2.0.0"
   }
 }
